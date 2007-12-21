@@ -17,6 +17,7 @@ BuildRequires:	dbus-sharp
 BuildRequires:	avahi-sharp
 Requires(post):	scrollkeeper
 Requires(postun):	scrollkeeper
+BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 LAT stands for LDAP Administration Tool. The tool allows you to browse
