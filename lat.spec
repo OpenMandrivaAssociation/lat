@@ -80,7 +80,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/pixmaps/%{name}.png
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/application-registry/%{name}.applications
-%exclude %{_localstatedir}/scrollkeeper
+%exclude %{_localstatedir}/lib/scrollkeeper
 %{_prefix}/lib/pkgconfig/lat-plugins.pc
 
 
