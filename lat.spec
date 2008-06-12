@@ -59,15 +59,19 @@ desktop-file-install --vendor="" \
 %clean
 rm -rf $RPM_BUILD_ROOT
 
+%if %mdkversion < 200900
 %post
 %update_scrollkeeper
 #%%update_icon_cache hicolor
 %update_menus
+%endif
 
+%if %mdkversion < 200900
 %postun
 %clean_scrollkeeper
 #%%clean_icon_cache hicolor
 %clean_menus
+%endif
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
