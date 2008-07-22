@@ -1,7 +1,7 @@
 Summary:	LAT - LDAP Administration Tool
 Name:		lat
 Version:	1.2.2
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	GPL
 Group:		System/Configuration/Other
 URL:		http://people.mmgsecurity.com/~lorenb/lat/
