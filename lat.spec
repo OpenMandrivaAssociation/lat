@@ -1,11 +1,11 @@
 Summary:	LAT - LDAP Administration Tool
 Name:		lat
-Version:	1.2.2
-Release:	%mkrel 3
+Version:	1.2.3
+Release:	%mkrel 1
 License:	GPL
 Group:		System/Configuration/Other
-URL:		http://people.mmgsecurity.com/~lorenb/lat/
-Source0:	http://people.mmgsecurity.com/~lorenb/lat/releases/%{name}-%{version}.tar.bz2
+URL:		http://www.lbtechservices.com/projects/lat/
+Source0:	http://www.lbtechservices.com/downloads/lat/1.2/%name-%version.tar.gz
 BuildRequires:	mono-devel
 BuildRequires:	gnome-sharp2
 BuildRequires:	gnome-keyring-devel
@@ -84,7 +84,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/pixmaps/%{name}.png
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/application-registry/%{name}.applications
-%exclude %{_localstatedir}/lib/scrollkeeper
 %{_prefix}/lib/pkgconfig/lat-plugins.pc
 
 
