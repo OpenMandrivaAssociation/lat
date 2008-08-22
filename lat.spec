@@ -2,7 +2,7 @@ Summary:	LAT - LDAP Administration Tool
 Name:		lat
 Version:	1.2.3
 Release:	%mkrel 1
-License:	GPL
+License:	GPLv2
 Group:		System/Configuration/Other
 URL:		http://www.lbtechservices.com/projects/lat/
 Source0:	http://www.lbtechservices.com/downloads/lat/1.2/%name-%version.tar.gz
@@ -15,6 +15,7 @@ BuildRequires:	scrollkeeper
 BuildRequires:	desktop-file-utils
 BuildRequires:	dbus-sharp
 BuildRequires:	avahi-sharp
+BuildRequires:	gnome-sharp2-devel
 Requires(post):	scrollkeeper
 Requires(postun):	scrollkeeper
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
