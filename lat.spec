@@ -1,7 +1,7 @@
 Summary:	LAT - LDAP Administration Tool
 Name:		lat
 Version:	1.2.3
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPLv2
 Group:		System/Configuration/Other
 URL:		http://www.lbtechservices.com/projects/lat/
@@ -57,20 +57,21 @@ desktop-file-install --vendor="" \
   --add-category="X-MandrivaLinux-System-Configuration-Other" \
   --dir $RPM_BUILD_ROOT%{_datadir}/applications $RPM_BUILD_ROOT%{_datadir}/applications/*
 
+mkdir -p %buildroot%_datadir/pkgconfig
+mv %buildroot%_prefix/lib/pkgconfig/*.pc %buildroot%_datadir/pkgconfig
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %if %mdkversion < 200900
 %post
 %update_scrollkeeper
-#%%update_icon_cache hicolor
 %update_menus
 %endif
 
 %if %mdkversion < 200900
 %postun
 %clean_scrollkeeper
-#%%clean_icon_cache hicolor
 %clean_menus
 %endif
 
@@ -85,6 +86,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/pixmaps/%{name}.png
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/application-registry/%{name}.applications
-%{_prefix}/lib/pkgconfig/lat-plugins.pc
-
-
+%{_datadir}/pkgconfig/lat-plugins.pc
