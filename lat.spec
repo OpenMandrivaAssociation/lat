@@ -1,5 +1,5 @@
 %global debug_package %{nil}
-Summary:	LAT - LDAP Administration Tool
+Summary:	- LDAP Administration Tool
 Name:		lat
 Version:	1.2.4
 Release:	1
