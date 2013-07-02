@@ -1,8 +1,8 @@
 %global debug_package %{nil}
-Summary:	- LDAP Administration Tool
+Summary:	LDAP Administration Tool
 Name:		lat
 Version:	1.2.4
-Release:	1
+Release:	2
 License:	GPLv2
 Group:		System/Configuration/Other
 URL:		http://sourceforge.net/projects/ldap-at/
@@ -55,7 +55,7 @@ desktop-file-install --vendor="" \
   --add-category="GNOME" \
   --add-category="Network" \
   --add-category="X-MandrivaLinux-System-Configuration-Other" \
-  --dir $RPM_BUILD_ROOT%{_datadir}/applications $RPM_BUILD_ROOT%{_datadir}/applications/*
+  --dir %{buildroot}%{_datadir}/applications %{buildroot}%{_datadir}/applications/*
 
 mkdir -p %buildroot%_datadir/pkgconfig
 mv %buildroot%_prefix/lib/pkgconfig/*.pc %buildroot%_datadir/pkgconfig
