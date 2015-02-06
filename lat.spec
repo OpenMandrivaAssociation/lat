@@ -2,7 +2,7 @@
 Summary:	LDAP Administration Tool
 Name:		lat
 Version:	1.2.4
-Release:	2
+Release:	3
 License:	GPLv2
 Group:		System/Configuration/Other
 URL:		http://sourceforge.net/projects/ldap-at/
