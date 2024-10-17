@@ -5,7 +5,7 @@ Version:	1.2.4
 Release:	3
 License:	GPLv2
 Group:		System/Configuration/Other
-URL:		http://sourceforge.net/projects/ldap-at/
+URL:		https://sourceforge.net/projects/ldap-at/
 source0:  http://downloads.sourceforge.net/project/ldap-at/LAT/LAT%20-%20%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	mono-devel
 BuildRequires:	gnome-sharp2
