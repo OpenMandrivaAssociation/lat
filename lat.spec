@@ -7,6 +7,10 @@ License:	GPLv2
 Group:		System/Configuration/Other
 URL:		https://sourceforge.net/projects/ldap-at/
 source0:  http://downloads.sourceforge.net/project/ldap-at/LAT/LAT%20-%20%{version}/%{name}-%{version}.tar.gz
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	mono-devel
 BuildRequires:	gnome-sharp2
 BuildRequires:	libgnome-keyring-devel
